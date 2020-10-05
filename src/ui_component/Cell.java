@@ -1,3 +1,5 @@
+package ui_component;
+
 public class Cell {
 
 	public Cell upCell = null, downCell = null, leftCell = null, rightCell = null;

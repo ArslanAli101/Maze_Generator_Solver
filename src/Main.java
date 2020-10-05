@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-public class MainGUI {
+public class Main {
 
 	private JFrame frmArtificialIntelligenceProject;
 	private JTextField mazeSizeText;
@@ -29,7 +29,7 @@ public class MainGUI {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainGUI window = new MainGUI();
+					Main window = new Main();
 					window.frmArtificialIntelligenceProject.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ public class MainGUI {
 	/**
 	 * Create the application.
 	 */
-	public MainGUI() {
+	public Main() {
 		initialize();
 	}
 
@@ -52,7 +52,7 @@ public class MainGUI {
 		frmArtificialIntelligenceProject = new JFrame();
 		frmArtificialIntelligenceProject.setAlwaysOnTop(true);
 		frmArtificialIntelligenceProject.setIconImage(Toolkit.getDefaultToolkit().getImage(
-				"./MazeIcon128.jpg"));
+                "resource/MazeIcon128.jpg"));
 		frmArtificialIntelligenceProject.setResizable(false);
 		frmArtificialIntelligenceProject.setTitle("Project Spring - 2015");
 		frmArtificialIntelligenceProject.setBounds(100, 100, 422, 212);

@@ -1,3 +1,5 @@
+package ui_component;
+
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -58,7 +60,7 @@ public class Canvas {
 		this.maze = maze;
 		setXscale(0, maze.size + 2);
 		setYscale(0, maze.size + 2);
-		frame.setTitle("AI-Project:Maze Generator & Solver - " + maze.size + " x " + maze.size);
+		frame.setTitle("Maze Generator & Solver - " + maze.size + " x " + maze.size);
 	}
 
 	public void setCanvasSize(int w, int h) {
@@ -97,7 +99,7 @@ public class Canvas {
 		frame.setContentPane(draw);
 		frame.setResizable(false);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		frame.setTitle("AI-Project:Maze Generator & Solver");
+		frame.setTitle("Maze Generator & Solver");
 		frame.pack();
 		frame.requestFocusInWindow();
 		frame.setVisible(true);

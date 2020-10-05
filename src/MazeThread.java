@@ -1,3 +1,6 @@
+import ui_component.Canvas;
+import ui_component.Maze;
+
 public class MazeThread implements Runnable {
 	int mazeSize, solveSpeed, generateSpeed, selectedAlgorithm;
 	Thread runner;
